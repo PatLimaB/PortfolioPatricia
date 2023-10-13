@@ -1,0 +1,456 @@
+:root {
+    --color-verde: limegreen;
+    --color-gris-oscuro: #333;
+    --color-gris-claro: #555;
+    --color-blanco-texto: #fff;
+}
+
+* {
+    font-family: 'Oxygen', sans-serif;
+}
+
+body {
+    background-color: #f5f5f5;
+    color: var(--color-gris-oscuro);
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+#inicio {
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-between; 
+    align-items: center; 
+    margin: 0 auto;
+    padding: 40px 20px;
+    background-color: var(--color-blanco-texto);
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    list-style-type: none;
+}
+
+nav ul li a {
+    font-weight: bold;
+    text-decoration: none;
+    padding: 12.5px;
+    color: var(--color-blanco-texto);
+}
+
+nav ul li a:hover {
+    color: var(--color-gris-oscuro);
+    background: var(--color-verde);
+}
+
+.columnas {
+    display: flex;
+    flex-direction: row; /* Diseño en fila por defecto */
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.columnaIzquierda {
+    flex-basis: 50%;
+    padding: 2%; /* Añade un espacio relativo al ancho del contenedor */
+    box-sizing: border-box;
+    text-align: justify;
+    margin: 2%; /* Añade un espacio relativo al ancho del contenedor */
+}
+
+.columnaDerecha {
+    flex-basis: 48%; /* Deja espacio para el margen derecho del 2% */
+    text-align: center;
+}
+
+#miFoto{
+    width: 60%; /* Ajusta la imagen al 100% del ancho de su contenedor */
+    max-width: none; /* Elimina la restricción de ancho máximo */
+    border-radius: 50%;
+}
+
+.botonesInicio {
+    text-align: center; 
+    width: 100%; 
+    margin-top: 20px; 
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: var(--color-gris-oscuro);
+    color: var(--color-blanco-texto);
+    text-decoration: none;
+    border-radius: 3px;
+    font-size: 16px;
+}
+
+.btn:hover {
+    background-color: var(--color-gris-claro);
+}
+
+.btn-cv {
+    background-color: var(--color-verde);
+    margin-left: 30px; 
+}
+
+h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+h3 {
+    font-size: 27px;
+}
+
+h4{
+    font-size: 20px;
+}
+
+h2 {
+    font-size: 30px;
+    margin-bottom: 50px;
+    text-align: center;
+    background-color: var(--color-verde);
+    color: var(--color-blanco-texto);
+    padding: 20px;
+    position: relative;
+}
+
+nav {
+    background-color: var(--color-gris-oscuro);
+    padding: 10px 0;
+}
+
+.iconosTecnologias{
+    text-align: center;
+    padding: 2%;
+}
+
+.icono {
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+    margin-top: 10px;
+}
+
+#htmlIcono:hover{
+    content: url('./img/html-5.png');
+}
+
+#cssIcono:hover{
+    content: url('./img/css-3.png');
+}
+
+#mysqlIcono:hover{
+    content: url('./img/mysql.png');
+}
+
+#javaIcono:hover{
+    content: url('./img/java.png');
+}
+
+#javascriptIcono:hover{
+    content: url('./img/javaScript.png');
+}
+
+#netbeansIcono:hover{
+    content: url('./img/apacheNetBeans.png');
+}
+
+#eclipseIcono:hover{
+    content: url('./img/eclipse.png');
+}
+
+#visualIcono:hover{
+    content: url('./img/visualStudio.png');
+}
+
+#sobreMi, #proyectos, #contacto {
+    background-color: var(--color-blanco-texto);
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 0; 
+    text-align: center; /* Centra el contenido */
+}
+
+.skills{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 2%;
+    font-size: 20px;
+    flex-wrap: wrap;
+}
+
+.habilidades{
+    display: flex;
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center;
+    margin: auto;
+    padding: 2%;
+    border-radius: 60px 15px 60px 15px;
+    -moz-border-radius: 60px 15px 60px 15px;
+    -webkit-border-radius: 60px 15px 60px 15px;
+    border: 0px;
+    height: 230px;
+    width: 225px;
+    text-align: center;
+    color: var(--color-blanco-texto);
+    background-color: var(--color-gris-oscuro);
+    position: relative; /* Añade posición relativa para posicionar el texto adicional */
+    transition: background-color 0.5s;
+}
+
+.habilidades:hover {
+    background-color: var(--color-verde); /* Cambia el color al pasar el ratón */
+}
+
+.habilidades p {
+    transition: opacity 0.5s; /* Agrega una transición para la opacidad del texto */
+    opacity: 0; /* Inicialmente el texto no es visible */
+    position: absolute; /* Posición absoluta para superponer el texto */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    color: var(--color-blanco-texto);
+    border-radius: 60px 15px 60px 15px;
+    -moz-border-radius: 60px 15px 60px 15px;
+    -webkit-border-radius: 60px 15px 60px 15px;
+}
+
+.habilidades:hover p {
+    opacity: 1; /* Hace que el texto sea visible al pasar el ratón */
+}
+
+#experiencia::before {
+    content: "Experiencia Previa";
+    transition: content 0.5s; /* Agrega una transición para el cambio de contenido */
+    white-space: pre;
+}
+
+#experiencia:hover::before {
+    content: "Trato con clientes" "\A Trabajos en equipo" "\A Trabajos en solitario"; /* Texto que aparece al poner el ratón encima */
+    font-size: 17px;
+}
+
+#educacion::before {
+    content: "Educación"; 
+    transition: content 0.5s; 
+    white-space: pre;
+}
+
+#educacion:hover::before {
+    content: "Grado Superior en" "\A Desarrollo Aplicaciones Web" "\A IES Albarregas (Mérida)" "\A" "\A Inglés B2"; 
+    font-size: 16px;
+}
+
+#softSkills::before {
+    content: "Soft Skills"; 
+    transition: content 0.5s; 
+    white-space: pre;
+}
+
+#softSkills:hover::before {
+    content: "Empatía" "\A Flexibilidad" "\A Resiliencia" "\A Compromiso" "\A Pensamiento Crítico"; 
+    font-size: 17px;
+}
+
+.contenedorProyectos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 2%;
+}
+
+.proyecto {
+    position: relative;
+    flex-basis: 32%; /* Dividimos el espacio entre los tres elementos para que tengan el mismo espacio cada uno */
+    margin-bottom: 20px; /* Espacio entre proyectos verticalmente */
+    overflow: hidden;   /* Evitamos que se muestre cualquier desbordamiento que ocurra */
+    min-width: 375px;
+    min-height: auto;
+}
+
+.proyecto::after {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centramos vertical y horizontalmente el texto */
+    text-align: center;
+    color: var(--color-blanco-texto); 
+    font-size: 18px; 
+    opacity: 0; /* Inicialmente invisible */
+    transition: opacity 0.3s; /* Transición de la opacidad */
+    z-index: 2; /* Colocamos el texto sobre el fondo oscuro */
+    white-space: pre;
+}
+
+.proyecto:hover::after {
+    opacity: 1; /* Se hace visible al pasar el ratón */
+}
+
+.proyecto:first-child::after{
+    content: "¡Mi primer proyecto" "\A con JavaScript!" "\A" "\A Al hacer click en el botón" "\A agrega nombres de alumnos" "\A con edades aleatorias."; /* Texto que se mostrará al pasar el ratón */
+    pointer-events: none; /* Para que el párrafo no bloquee el enlace */
+
+}
+
+.parrafoProyecto {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: calc(458px * 1.03); /* Tamaño máximo para que se ajuste al reescalado de la imagen */
+    height: calc(300px * 1.05); /* Tamaño máximo para que se ajuste al reescalado de la imagen */
+    background-color: rgba(0, 0, 0, 0.7);
+    opacity: 0;
+    transition: opacity 0.7s;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+
+.proyecto:hover .parrafoProyecto {
+    opacity: 1;
+
+}
+
+.proyecto:nth-child(2)::after{
+    content: "¡Averigua cuánto queda" "\A para felicitarme en mi próximo cumpleaños!";
+    pointer-events: none; /* Para que el párrafo no bloquee el enlace */
+
+}
+
+.proyecto:nth-child(2)::after a {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: transparent; /* Cambia el fondo a transparente para que no se muestre el fondo oscuro */
+    opacity: 0; /* Inicialmente invisible */
+    z-index: 3;
+}
+
+.proyecto:nth-child(2):hover::after a {
+    opacity: 1; /* Hace visible el enlace al pasar el ratón */
+    cursor: pointer; /* Cambia el cursor al pasar el ratón para indicar que es un enlace */
+    pointer-events: auto; /* Permite hacer clic en el enlace */
+}
+
+.proyecto:last-child::after{
+    content: "Un primer proyecto de formulario" "\A de registro basado en" "\A una versión simplificada y" "\A modificada del formulario " "\A de registro de Guild Wars 2."; /* Texto que se mostrará al pasar el ratón */
+    pointer-events: none; /* Para que el párrafo no bloquee el enlace */
+}
+
+.proyecto:first-child {
+    margin-left: 25px; 
+}
+
+.proyecto img{
+    height: 300px;
+    width: 458px;
+    max-width: 100%; /* Aseguramos que las imágenes no sean más anchas que el contenedor */
+    transition: transform 0.5s; /* Transición para el aumento de tamaño de la imagen */
+}
+
+.proyecto:hover img {
+    transform: scale(1.05); /* Aumenta el tamaño de la imagen al pasar el ratón */
+}
+
+form {
+    background-color: var(--color-blanco-texto);
+    padding: 25px;
+    text-align: left;
+}
+
+fieldset a {
+    display: inline-block; /* Cambia el enlace a un bloque para que ocupe todo el ancho disponible */
+    text-align: center; /* Centra el texto horizontalmente */
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+textarea {
+    width: 95%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 16px;
+}
+
+form .btn {
+    display: block;
+    padding: 10px 20px;
+    background-color: var(--color-gris-oscuro);
+    color: var(--color-blanco-texto);
+    text-decoration: none;
+    border-radius: 3px;
+    font-size: 16px;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between; /* Distribuir los elementos a los extremos */
+    align-items: center; /* Centrar verticalmente los elementos */
+    padding: 20px 15px;
+    background-color: var(--color-gris-oscuro);
+    color: var(--color-blanco-texto);
+    margin-top: 20px;
+}
+
+#github,
+#mail {
+    width: 30px;
+    height: 30px;
+    margin: 15px;
+}
+
+#contenedorFlecha{
+    display: flex;
+    justify-content: flex-end;}
+
+.btn-arriba {
+    padding: 5px; /* Reduce el padding para hacerlo más pequeño */
+    margin: 5px;
+}
+
+.btn-arriba:hover {
+    content: url('./img/flecha-gris.png');
+    padding: 5px;
+    margin: 5px;
+    height: 50px;
+}
+
+.btn-arriba a {
+    height: 50px;
+}
+
+.btn-arriba img {
+    height: 50px;
+}

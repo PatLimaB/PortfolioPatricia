@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oxygen&display=swap" rel="stylesheet">
+    <title>Portfolio</title>
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+</head>
+
+<body>
+    <header id="arriba">
+        <h1>Mi Portfolio</h1>
+        <nav>
+            <ul>
+                <li><a href="#tituloSobreMi">Sobre mí</a></li>
+                <li><a href="#tituloProyectos">Proyectos</a></li>
+                <li><a href="#tituloContacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+    <section id="inicio">
+        <div class="columnas">
+            <div class="columnaIzquierda">
+                <h3>¡Saludos!</h3>
+                <h4>Mi nombre es Patricia Lima Bolumar</h4>
+                <p>
+                    Soy una apasionada estudiante de Desarrollo Web Full Stack en
+                    constante aprendizaje. Te doy la bienvenida a mi rincón digital,
+                    donde comparto mi camino en el mundo de la programación y mis
+                    proyectos. Aunque aún no tengo experiencia profesional en este
+                    campo, estoy aquí para aprender, crear y crecer. ¡Explora mis
+                    proyectos y únete a mi aventura tecnológica!
+                </p>
+            </div>
+            <div class="columnaDerecha">
+                <img src="./img/patriPortada.jpg" id="miFoto" />
+            </div>
+        </div>
+        <div class="botonesInicio">
+            <a href="#contacto" class="btn btn-contacto">Contacto</a>
+            <a href="./descargas/PatriciaLima_CV_DAW.pdf" download class="btn btn-cv">Descargar CV</a>
+        </div>
+    </section>
+    <section id="sobreMi">
+        <h2 id="tituloSobreMi">Sobre mí</h2>
+        <div>
+            <div class="skills">
+                <div class="habilidades" id="experiencia">
+                    <p></p>
+                </div>
+                <div class="habilidades" id="educacion">
+                    <p></p>
+                </div>
+                <div class="habilidades" id="softSkills">
+                    <p></p>
+                </div>
+            </div>
+            <div class="iconosTecnologias">
+                <h3>Tecnologías Conocidas</h3>
+                <img src="./img/html-5-grey.png" class="icono" id="htmlIcono" alt="HTML5" />
+                <img src="./img/java-grey.png" class="icono" id="javaIcono" alt="Java" />
+                <img src="./img/javaScript-grey.png" class="icono" id="javascriptIcono" alt="JavaScript" />
+                <img src="./img/mysql-grey.png" class="icono" id="mysqlIcono" alt="MySQL" />
+                <img src="./img/css-3-grey.png" class="icono" id="cssIcono" alt="CSS" /><br />
+                <img src="./img/apacheNetBeans-grey.png" class="icono" id="netbeansIcono" alt="Apache NetBeans" />
+                <img src="./img/eclipse-grey.png" class="icono" id="eclipseIcono" alt="Eclipse" />
+                <img src="./img/visualStudio-grey.png" class="icono" id="visualIcono" alt="Visual Studio Code" />
+            </div>
+        </div>
+    </section>
+    <section id="proyectos">
+        <h2 id="tituloProyectos">Proyectos</h2>
+        <div class="contenedorProyectos">
+            <div class="proyecto">
+                <a href="https://patlimab.github.io/Tarea1JS/" target="_blank">
+                    <img src="./img/proyectoTablaAlumnos.png"/>
+                    <div class="parrafoProyecto">
+                        <p></p>
+                    </div>
+                </a>
+            </div>
+            <div class="proyecto">
+                <a href="https://patlimab.github.io/ContadorCumple/" target="_blank">
+                    <img src="./img/proyectoContador.png"/>
+                    <div class="parrafoProyecto">
+                        <p></p>
+                    </div>
+                </a>
+            </div>
+            <div class="proyecto">
+                <a href="https://patlimab.github.io/FormularioRegistro/" target="_blank">
+                    <img src="./img/proyectoFormularioRegistro.png"/>
+                    <div class="parrafoProyecto">
+                        <p></p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+    <div id="contacto">
+        <h2 id="tituloContacto">Contacto</h2>
+        <div class="columnas">
+            <div class="columnaIzquierda">
+                <p>
+                    Ponte en contacto conmigo para lo que necesites: resolver alguna
+                    duda, contratarme, alguna petición, <i>contratarme</i>...
+                </p>
+                <p><strong>¡Adelante!</strong></p>
+            </div>
+            <div class="columnaDerecha">
+                <form>
+                    <fieldset>
+                        <label>Nombre</label>
+                        <input type="text"/>
+                        <label>Correo electrónico</label>
+                        <input type="text"/>                    
+                        <label>Comentario</label>
+                        <textarea></textarea>
+                        <a href="#contacto" class="btn btn-contacto">Enviar</a>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="contenedorFlecha">
+        <a href="#arriba" class="btn-arriba">
+            <img src="./img/flecha-verde.png" alt="Ir Arriba"/>
+        </a>
+    </div>
+</main>
+</body>
+<footer>
+    <div>
+        <a href="https://github.com/PatLimaB" target="_blank"> <img src="./img/github.png" class="icono" id="github" alt="GitHub"/></a>
+    </div>
+    <p>Patricia Lima Bolumar © 2023</p>
+</footer>
+
+</html>
