@@ -145,35 +145,35 @@ nav {
 }
 
 #htmlIcono:hover{
-    content: url('./img/html-5.png');
+    content: url('./img/icons/html-5.png');
 }
 
 #cssIcono:hover{
-    content: url('./img/css-3.png');
+    content: url('./img/icons/css-3.png');
 }
 
 #mysqlIcono:hover{
-    content: url('./img/mysql.png');
+    content: url('./img/icons/mysql.png');
 }
 
 #javaIcono:hover{
-    content: url('./img/java.png');
+    content: url('./img/icons/java.png');
 }
 
 #javascriptIcono:hover{
-    content: url('./img/javaScript.png');
+    content: url('./img/icons/javaScript.png');
 }
 
 #netbeansIcono:hover{
-    content: url('./img/apacheNetBeans.png');
+    content: url('./img/icons/apacheNetBeans.png');
 }
 
 #eclipseIcono:hover{
-    content: url('./img/eclipse.png');
+    content: url('./img/icons/eclipse.png');
 }
 
 #visualIcono:hover{
-    content: url('./img/visualStudio.png');
+    content: url('./img/icons/visualStudio.png');
 }
 
 #sobreMi, #proyectos, #contacto {
@@ -341,8 +341,12 @@ nav {
     content: "Observa cómo cae la nieve" "\A sobre este paisaje del " "\A norte de Kalimdor."; /* Texto que se mostrará al pasar el ratón */
 }
 
-.proyecto:last-child::after{
+.proyecto:nth-child(5)::after{
     content: "Un jardín de píxeles " "\A al que cambiarás el color de" '\A sus "flores" al pasar el puntero ' "\A sobre la cuadrícula."; /* Texto que se mostrará al pasar el ratón */
+}
+
+.proyecto:last-child::after{
+    content: "Un reproductor de música " "\A con estética de " "\A fantasía medieval."; /* Texto que se mostrará al pasar el ratón */
 }
 
 .proyecto img{
@@ -441,7 +445,7 @@ footer {
 }
 
 .btn-arriba:hover {
-    content: url('./img/flecha-gris.png');
+    content: url('./img/icons/flecha-gris.png');
     padding: 5px;
     margin: 5px;
     height: 50px;
