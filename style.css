@@ -345,8 +345,24 @@ nav {
     content: "Un jardín de píxeles " "\A al que cambiarás el color de" '\A sus "flores" al pasar el puntero ' "\A sobre la cuadrícula."; /* Texto que se mostrará al pasar el ratón */
 }
 
-.proyecto:last-child::after{
+.proyecto:nth-child(6)::after{
     content: "Un reproductor de música " "\A con estética de " "\A fantasía medieval."; /* Texto que se mostrará al pasar el ratón */
+}
+
+.proyecto:nth-child(7)::after{
+    content: "Introduce un texto " "\A en la alerta para codificarlo."; /* Texto que se mostrará al pasar el ratón */
+}
+
+.proyecto:nth-child(8)::after{
+    content: "Versión del mítico juego Pang" "\A realizada con compañeros."; /* Texto que se mostrará al pasar el ratón */
+}
+
+.proyecto:nth-child(9)::after{
+    content: "Una aplicación de notas " "\A que usa IndexedDB."; /* Texto que se mostrará al pasar el ratón */
+}
+
+.proyecto:last-child::after{
+    content: "Mi primer contacto con una API. " "\A Muestra información sobre" "\A personajes secundarios de Disney.";
 }
 
 .proyecto img{
